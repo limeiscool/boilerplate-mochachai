@@ -53,10 +53,10 @@ suite("Unit Tests", function () {
     });
     // #6
     test("#strictEqual, #notStrictEqual", function () {
-      assert.fail(6, "6");
-      assert.fail(6, 3 * 2);
-      assert.fail(6 * "2", 12);
-      assert.fail([1, "a", {}], [1, "a", {}]);
+      assert.notStrcitEqual(6, "6");
+      assert.strcitEqual(6, 3 * 2);
+      assert.notStrcitEqual(6 * "2", 12);
+      assert.strcitEqual([1, "a", {}], [1, "a", {}]);
     });
     // #7
     test("#deepEqual, #notDeepEqual", function () {
